@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da Seção Banner */ 
+
+.dimensao-padrao{
+    height: 100vh;
+    width: 100%;    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+.area-banner .container-foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ysabeau Infant', sans-serif;
+  
+}
+
+.container-foto  h1 {
+    color:#fff;
+    position: relative;
+
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 5px 10px 5px #000000 ;
+}
+
+.container-foto h1::before{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 4px;
+    left: 2px;
+    bottom: 4px;
+    
+ 
+   }
+
+.container-foto h1::after{
+    content: "";
+    background-image: url(img/verificado.png);
+    position: absolute;
+    background-repeat: no-repeat ;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+}
+
+
+.foto-perfil {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    z-index: 1;
+
+}
+ 
+.borda-gradiente{
+
+    width: 215px;
+    height: 215px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+
+ 
+.links{
+
+    margin: 40px 0;
+ 
+ 
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.links img{
+    
+    width: 20px;
+
+    display: flex;
+    align-items: left;
+
+    position: absolute;
+    left: 25px;
+ 
+}
+
+.links a {
+
+    border: 1px solid black;
+    width: 768px;
+
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 100px;
+
+    text-align: center;
+    background-color: #020000a4;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links a:hover {
+
+    border: 1px solid black;
+    border-radius: 100px;
+
+    width: 768px;
+    padding: 10px 0;
+    margin: 20px 0;
+ 
+    
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+
+    background-color: #000000;
+    color: #fff;
+    
+}
+
+
+/* Seção Tabela */ 
+
+.area-tabela{
+    background-image: url(img/imagem-de-fundo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+.area-tabela h1{
+    color:#fff;
+    position: relative;
+    padding: 40px;
+
+    font-size: 40px;
+    text-shadow: 5px 10px 5px #000000 ;
+    font-weight: bold;
+
+ }
+
+
+.area-tabela tbody td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+table tr, th, td {
+    border: 1px solid black;
+    padding: 20px;
+    width: 30px;
+}
+
+table tr td{
+    border: 1px solid black;
+
+    padding: 20px;
+    width: 150px;
+
+    text-align: center;
+}
+
+table tbody tr:nth-of-type(odd){
+    
+    background-color: #000000 ;
+    opacity: 0.8;
+    color: #fff;
+}
+
+table tbody tr:nth-of-type(even){
+    background-color: #fff ;
+    opacity: 0.8;
+    color: #000000;
+}
+ 
+
+table img{  
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ 
+}
+
+ 
